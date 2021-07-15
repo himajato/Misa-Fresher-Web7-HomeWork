@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    font-family: GoogleSans;
+    font-size: 13px;
+}
+
+@font-face{
+    font-family: 'GoogleSans';
+    src: url('../content/GoogleSans-Regular.otf');
+}
+
+@font-face{
+    font-family: 'GoogleSans-Bold';
+    src: url('../content/GoogleSans-Bold.otf');
+}
+
+@font-face{
+    font-family: 'GoogleSans-italic';
+    src: url('../content/GoogleSans-Italic.otf');
+}

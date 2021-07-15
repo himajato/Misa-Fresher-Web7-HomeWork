@@ -1,0 +1,43 @@
+.button {
+    height: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #019160;
+    line-height: 40px;
+    width: 200px;
+    box-sizing: unset;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover{
+    background-color: #2FBE8E;
+}
+
+button:active{
+    background-color: #01B075;
+}
+
+.button-have-icon{
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    color: #ffffff;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #019160;
+    size: 13px;
+    box-sizing: border-box;
+    display: flex;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}   
+
+.button-have-icon:hover{
+    background-color: #2FBE8E;
+}

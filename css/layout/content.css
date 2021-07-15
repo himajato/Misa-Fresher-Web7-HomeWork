@@ -1,0 +1,270 @@
+.content{
+    position: absolute;
+    top: 49px;
+    left: 226px;
+    width: calc(100% - 227px);
+    height: calc(100vh - 49px);
+}
+
+.content .title-and-button{
+    margin: 16px 12px 16px 16px; 
+    display: flex ;
+}
+
+.content .title-and-button .title{
+    font-family: GoogleSans;
+    font-size: 20px;
+    font-weight: bold;
+
+    
+}
+
+.content .title-and-button .button-have-icon {
+    display: flex;
+    margin-left: auto;
+    text-align: left;
+    align-items: center;
+}
+
+.content .title-and-button .button-have-icon .add-icon{
+    width: 16px;
+    height: 16px;
+    background-image: url(/content/icon/add.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+}
+
+.content .title-and-button .button-have-icon .button-title{
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.content .second-line{
+    display: flex;
+    width: calc(100% - 2px);
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.content .second-line .search-box{
+    display: flex;
+    width: 250px;
+}
+
+.content .second-line .search-box .search-icon{
+    height: 16px;
+    width: 16px;
+    margin: 16px 0px 16px 16px;
+    background-image: url(/content/icon/search.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content .second-line .search-box .search-input{
+    width: 100%;
+    border: 0px;
+    margin-left: 8px;
+    margin-right: 50px;
+}
+
+.content .second-line .dropdown-box{
+    margin-left: 10px;
+    margin-right: 16px;
+}
+
+.content .second-line .dropdown-box .dropdown-title{
+    padding-right: 20px;
+    display: inline-block;
+}
+.content .second-line .dropdown-box .dropdown-title .ul{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.content .second-line .dropdown-box .dropdown-title:hover .ul{
+    display: block;
+}
+
+.content .second-line .dropdown-box .dropdown-icon{
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.content .second-line .button-refresh{
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    border-radius: 4px;
+    background-image: url(/content/icon/refresh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #bbbbbb   ;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.content .table-list{
+    width: calc(100% - 32px);
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: calc(100vh - 220px);
+}
+
+.content .table-list .table{
+    position: relative;
+    border-collapse: collapse;
+    padding-left: 16px;
+    margin-top: 20px;
+    width: 100%;
+    overflow-y: hidden;
+
+}
+
+.content .table-list .table tr td{
+    padding-left: 16px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.content .table-list .table th{
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding-left: 16px;
+}
+
+.content .table-list .table tr:hover{
+    background-color: #E9EBEE;
+}
+
+.content .table-list .table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.content .table-list .table .salary{
+    text-align: right;
+    padding-right: 24px;
+}
+
+.content .modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.content .modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 24px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+
+.content .modal-content .close{
+    float: right;    
+
+}
+
+.content .modal-content .form-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.content .modal-content .form-title .title-info{
+    font-family: GoogleSans;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000; 
+}
+
+.content .modal .modal-content .button-close{
+    display: flex;
+}
+
+.content .modal .modal-content .button-close .button-x{
+    border: 0px;
+    margin-left: auto;
+}
+
+.content .paging-bar{
+    height: 56px;
+    display: flex;
+    background-color: red;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+
+}
+
+.content .modal-content .avatar-and-form{
+    display: flex;
+    width: 100%;
+}
+
+.content .modal-content .avatar-and-form .form-avatar{
+    width: 220px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.content .modal-content .avatar-and-form .form-avatar .avatar-img{
+    width: 180px;
+    height: 180px;
+    background-image: url(/content/Img/default-avatar.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    border: 1px solid #dddd;
+    border-radius: 50%;
+}
+
+.content .modal-content .avatar-and-form .form-avatar .avatar-img{
+    margin: auto;
+}
+
+.content .modal-content .avatar-and-form .form-info{
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+}
+
+.content .modal-content .avatar-and-form .form-info .infor-employee .info-input{
+    display: flex;
+    margin-top: 16px;
+}
+
+.content .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-1{
+    display: block;  
+    width: 50%;
+}
+
+.content .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-2{
+    display: block;  
+    width: 50%;
+    padding-left: 16px;
+}
+
+.content .paging-bar .number-show{
+    position: absolute;
+    left: 32px;
+}
+
+.content .paging-bar .employ-per-page{
+    position: absolute;
+    right: 32px;
+}

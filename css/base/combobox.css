@@ -1,0 +1,25 @@
+.combobox{
+    display: flex;
+    align-items: center;
+}
+
+.combobox:focus{
+    border-color: #019160;
+}
+
+.combobox input{
+    height: 40px;
+    border-color: #BBBBBB;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    min-width: 75px;
+    outline: none;
+}
+
+.combobox button.btn-combobox{
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+}
