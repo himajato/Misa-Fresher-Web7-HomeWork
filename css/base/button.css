@@ -1,4 +1,5 @@
 .button {
+    font-family: GoogleSans;;
     height: 40px;
     border-radius: 4px;
     color: #ffffff;
@@ -7,11 +8,11 @@
     padding-right: 24px;
     background-color: #019160;
     line-height: 40px;
-    width: 200px;
-    box-sizing: unset;
+    border: 0px;
+    outline: none;
     display: inline-block;
     cursor: pointer;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .button:hover{
@@ -36,8 +37,50 @@ button:active{
     outline: none;
     border: 0px;
     cursor: pointer;
+    align-items: center;
+    font-family: GoogleSans;
 }   
 
 .button-have-icon:hover{
     background-color: #2FBE8E;
+}
+
+.button-have-icon:active{
+    background-color: #01B075
+}
+
+.second-button{
+    background-color: #bbbbbb;
+    height: 40px;
+    border-radius: 4px;
+    size: 13px;
+    color: #000000; 
+    text-align: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    outline: none;
+    border: 0px;
+    font-family: GoogleSans;
+}
+
+.second-button:hover{
+    background-color: #E9EBEE;
+}
+.second-button:active{
+    background-color: #01B075;
+}
+
+.save-icon{
+    margin-right: 8px;
+}
+
+.second-button-number{
+    background-color: #bbbbbb;  
+    border-radius: 4px;
+    size: 13px;
+    color: #000000; 
+    text-align: center;
+    outline: none;
+    border: 0px;
+    font-family: GoogleSans;
 }

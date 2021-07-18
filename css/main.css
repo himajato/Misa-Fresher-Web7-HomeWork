@@ -4,6 +4,18 @@ body{
     font-size: 13px;
 }
 
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
 @font-face{
     font-family: 'GoogleSans';
     src: url('../content/GoogleSans-Regular.otf');
