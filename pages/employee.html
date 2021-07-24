@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/layout/content.css" />
     <link rel="stylesheet" href="../css/base/field-input.css" />
     <link rel="stylesheet" href="../font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="../css/base/modal.css" />
+    <link rel="stylesheet" href="../css/base/combobox.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phần mềm quản li nhà hàng - CUKCUK.VN</title>
 </head>
@@ -62,265 +64,395 @@
     <div class="content">
         <div class="title-and-button">
             <div class="title">Danh sách nhân viên</div>
-            <div  class="button-have-icon">
+            <div id="btn-add-employee" class="button-have-icon">
                 <div class="add-icon"></div>
                 <div class="button-title">Thêm nhân viên</div>
             </div>
         </div>
         <div class="second-line">
-            <input placeholder="Tìm theo mã, Tên hoặc Số điện thoại" class="search-box">
-                <div class="search-icon"></div>
-                <div class="search-input"></div>
-            </input>
-            <div class="dropdown-box">
-                <div class="dropdown-title">Tất cả phòng ban
-                    <div class="ul">
-                        <li class="dropdown-box">Phòng ban một</li>
-                        <li class="dropdown-box">Phòng ban hai</li>
-                        <li class="dropdown-box">Phòng ban ba</li>
-                    </div>
-                </div>
-                <div class="dropdown-icon">
+            <input placeholder="Tìm theo mã, Tên hoặc Số điện thoại" class="search-box"></input>
+            <div id="combobox-1" class="combobox">
+                <input type="text" value="Tất cả phòng ban">
+                <button id="btn-cbb-1" class="btn-dropdown">
                     <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="combobox-data">
+                    <div class="combobox-items">Phòng nhân sự</div>
+                    <div class="combobox-items">Phòng đào tạo</div>
+                    <div class="combobox-items combobox-items-select">Phòng quản lý</div>
                 </div>
             </div>
-            <div class="dropdown-box">
-                <div class="dropdown-title">Tất cả vị trí</div>
-                <div class="dropdown-icon">
+            <div class="combobox">
+                <input type="text" value="Tất cả vị trí">
+                <button class="btn-dropdown">
                     <i class="fas fa-chevron-down"></i>
-                </div>
+                </button>
             </div>
             <div class="button-refresh"></div>
         </div>
         <div class="table-list">
             <table class="table">
-                <tr>
-                  <th>Mã nhân viên</th>
-                  <th>Họ và tên</th>
-                  <th>Giới tính</th>
-                  <th>Ngày sinh</th>
-                  <th>Điện thoại</th>
-                  <th>Email</th>
-                  <th>Chức vụ</th>
-                  <th>Phòng ban</th>
-                  <th class="salary">Mức lương cơ bản</th>
-                  <th>Tình trạng công việc</th>
-
+                <tr style="height: 40px; position: sticky; top: 0px; background-color: #ffffff;">
+                  <th class="text-align-left">Mã nhân viên</th>
+                  <th class="text-align-left">Họ và tên</th>
+                  <th class="text-align-left">Giới tính</th>
+                  <th class="text-align-center">Ngày sinh</th>
+                  <th class="text-align-center">Điện thoại</th>
+                  <th class="text-align-left">Email</th>
+                  <th class="text-align-left">Chức vụ</th>
+                  <th class="text-align-left">Phòng ban</th>
+                  <th class="text-align-right salary">Mức lương cơ bản</th>
+                  <th class="text-align-left">Tình trạng công việc</th>
                 </tr>
                 <tr>
                   <td>NV-532408</td>
                   <td>Maria Anders</td>
                   <td>Nam</td>
-                  <td>22/01/1999</td>
-                  <td>0356827590</td>
+                  <td class="text-align-center">22/01/1999</td>
+                  <td class="text-align-center">0356827590</td>
                   <td>huynghials123@gmail.com</td>
                   <td>Fresher Web</td>
                   <td>Phòng đào tạo</td>
-                  <td class="salary">0.000.000</td>
+                  <td class="text-align-right salary">0.000.000</td>
                   <td>Đang đào tạo</td>
                 </tr>
                 <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
-                    <td>Đang đào tạo</td>
-                  </tr>
-                  </tr>
-                  <tr>
-                    <td>NV-532408</td>
-                    <td>Maria Anders</td>
-                    <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
-                    <td>huynghials123@gmail.com</td>
-                    <td>Fresher Web</td>
-                    <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
+                    <td class="text-align-right salary">0.000.000</td>
                     <td>Đang đào tạo</td>
                   </tr>
                   <tr>
                     <td>NV-532408</td>
                     <td>Maria Anders</td>
                     <td>Nam</td>
-                    <td>22/01/1999</td>
-                    <td>0356827590</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
                     <td>huynghials123@gmail.com</td>
                     <td>Fresher Web</td>
                     <td>Phòng đào tạo</td>
-                    <td class="salary">0.000.000</td>
-                    <td>Thử việc</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
+                  </tr>
+                  <tr>
+                    <td>NV-532408</td>
+                    <td>Maria Anders</td>
+                    <td>Nam</td>
+                    <td class="text-align-center">22/01/1999</td>
+                    <td class="text-align-center">0356827590</td>
+                    <td>huynghials123@gmail.com</td>
+                    <td>Fresher Web</td>
+                    <td>Phòng đào tạo</td>
+                    <td class="text-align-right salary">0.000.000</td>
+                    <td>Đang đào tạo</td>
                   </tr>
               </table>
         </div>
-        <div class="modal">
-            <div class="modal-button">
-                <div class="button-close">
-                    <button class="button-x">X</button>
+        <div class="paging-bar">
+            <div class="number-show">Hiện thị 1-10/1000 nhân viên</div>
+            <div class="pagingbar-tool">
+                <div class="to-top"><i class="fas fa-angle-double-left"></i></div>
+                <div class="next-to-front" style="margin-right: 10px;"><i class="fas fa-chevron-left"></i></div>
+                <div class="page-number-list" style="margin-right: 10px;">
+                    <button class="page-number page-number-select second-button-number">1</button>
+                    <button class="page-number second-button-number">2</button>
+                    <button class="page-number second-button-number">3</button>
+                    <button class="page-number second-button-number">4</button>
                 </div>
+                <div class="next-to-previous" style=" margin-right: 10px;"><i class="fas fa-chevron-right"></i></div>
+                <div class="to-bottom" style=" margin-right: 10px;"><i class="fas fa-angle-double-right"></i></div>
             </div>
-            <div class="modal-content">
+            <div class="employ-per-page">10 nhân viên/trang</div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <button id="btn-close-modal" class="btn-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="main-content">
                 <div class="form-title">
                     <div class="title-info">Thông tin nhân viên</div>   
                 </div>
@@ -335,24 +467,24 @@
                             <div style="background-color: green; width: 65px; height: 5px;"></div>
                             <div class="info-input">
                                 <div class="row-1">
-                                    <div>Mã nhân viên (*)</div>
+                                    <span>Mã nhân viên (<span style="color: red;">*</span>)</span>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Ngày sinh</div>
-                                    <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
+                                    <input type="date" class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Số CMTND/ Căn cước (*)</div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Nơi cấp</div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
-                                    <div style="margin-top: 16px">Email (*)</div>
+                                    <div style="margin-top: 16px"><span>Email (<span style="color: red;">*</span>)</span></div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                 </div>
                                 <div class="row-2">
-                                    <div>Họ và tên (*)</div>
+                                    <span>Họ và tên (<span style="color: red;">*</span>)</span>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Giới tính</div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Ngày cấp</div>
-                                    <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>                               
+                                    <input type="date" class="text-box-default" style="margin-top: 4px; width: 100%;"></input>                               
                                     <div style="margin-top: 92px">Ngày sinh</div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                 </div>
@@ -368,7 +500,7 @@
                                     <div style="margin-top: 16px">Mã số thuế cá nhân</div>
                                     <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                     <div style="margin-top: 16px">Ngày gia nhập công ty</div>
-                                    <input class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
+                                    <input type="date" class="text-box-default" style="margin-top: 4px; width: 100%;"></input>
                                 </div>
                                 <div class="row-2" style="width: 50%; padding-left: 16px;">
                                     <div>Phòng ban</div>
@@ -383,11 +515,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="paging-bar">
-            <div class="number-show">Hiện thị 1-10/1000 nhân viên</div>
-            <div class="employ-per-page">10 nhân viên/trang</div>
+            <div class="btn-save-cancel">
+                <button class="btn-cancel btn second-button">Hủy</button>
+                <button class="btn-save button-have-icon">
+                    <div class="save-icon">
+                        <i class="far fa-save"></i>
+                    </div>
+                    <div>Lưu</div>
+                </button>
+            </div>
         </div>
     </div>
+
+    <script src="/lib/jquery-3.6.0.min.js"></script>
+    <script src="/js/employee.js"></script>
 </body>
 </html>

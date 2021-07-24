@@ -1,0 +1,114 @@
+
+.modal{
+    display: none; /* Hidden by default */
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+.modal .btn-close{
+    float: right;
+    outline: none;
+    border: 0px;
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+}
+
+.modal .btn-close:hover{
+    background-color: #E9EBEE;
+}
+
+.modal .btn-close:active{
+    background-color: #01B075;
+}
+
+.modal .main-content{
+    padding: 16px;
+}
+
+.modal-content{
+      background-color: #fefefe;
+      margin: auto;
+      border: 1px solid #888;
+      width: 60%;
+  }
+  
+    .modal-content .form-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    
+        .modal-content .form-title .title-info{
+            font-family: GoogleSans;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000; 
+        }
+    .modal-content .avatar-and-form{
+        display: flex;
+        width: 100%;
+    }
+        
+        .modal-content .avatar-and-form .form-avatar{
+            width: 220px;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+  
+            .modal-content .avatar-and-form .form-avatar .avatar-img{
+                width: 180px;
+                height: 180px;
+                background-image: url(/content/Img/default-avatar.jpg);
+                background-size: contain;
+                background-position: center;
+                margin: auto;
+                border: 1px solid #dddd;
+                border-radius: 50%;
+                margin:auto
+            }
+
+        .modal-content .avatar-and-form .form-info{
+            padding-left: 10px;
+            display: block;
+            width: 100%;
+        }
+  
+            .modal-content .avatar-and-form .form-info .infor-employee .info-input{
+                display: flex;
+                margin-top: 16px;
+            }
+            
+                .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-1{
+                    display: block;  
+                    width: 50%;
+                }
+                .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-2{
+                    display: block;  
+                    width: 50%;
+                    padding-left: 16px;
+                }
+
+.modal .btn-save-cancel{
+    margin-top: 24px;
+    background-color: #bbbbbb;
+    height: 60px;
+    align-items: center;   
+    display: flex;
+    padding-right: 24px;
+}
+
+    .modal .btn-save-cancel .btn-cancel{
+        margin-left: auto;
+        margin-right: 16px;
+    }
+  
