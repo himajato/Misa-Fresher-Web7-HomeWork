@@ -21,19 +21,20 @@
 
 .content .title-and-button .button-have-icon {
     display: flex;
-    margin-left: auto;
     text-align: left;
     align-items: center;
 }
 
-.content .title-and-button .button-have-icon .add-icon{
-    width: 16px;
-    height: 16px;
-    background-image: url(/content/icon/add.png);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
+.content .title-and-button .add-and-delete #btn-add-employee{
+    margin-right: 16px;
+}
 
+.content .title-and-button .add-and-delete #btn-delete-employee{
+    background-color: #F65454;
+}
+
+.content .title-and-button .button-have-icon .add-icon{
+    background-image: url(/content/icon/add.png);
 }
 
 .content .title-and-button .button-have-icon .button-title{
@@ -81,6 +82,14 @@
     cursor: pointer;
 }
 
+#combobox-1{
+    margin-left: 16px;
+}
+
+#combobox-2{
+    margin-left: 16px;
+}
+
 .content .second-line .button-refresh{
     height: 40px;
     width: 40px;
@@ -95,10 +104,9 @@
 }
 
 .content .table-list{
-    width: calc(100% - 32px);
     display: flex;
-    margin: 0px 16px;
-    max-height: calc(100vh - 220px);
+    margin: 16px 16px 0px 16px;
+    height: calc(100vh - 234px);
     overflow-y: scroll;
     overflow-x: scroll;
 }
@@ -135,7 +143,8 @@
     height: 40px;
 }
 
-.content .table-list .table th{ 
+.content .table-list .table th{
+    position: sticky; 
     border-bottom: 1px solid #ddd;
     padding-left: 16px;
 }
@@ -154,6 +163,7 @@
 }
 
 .content .paging-bar{
+    bottom: 0px;
     height: 56px;
     display: flex; 
     margin-left: 16px;

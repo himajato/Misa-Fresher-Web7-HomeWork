@@ -2,8 +2,8 @@
 .modal{
     display: none; /* Hidden by default */
     position: absolute;
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 1000; /* Sit on top */
+    padding-top: 15px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -20,6 +20,8 @@
     background-color: #ffffff;
     height: 30px;
     width: 30px;
+    border-radius: 4px;
+    padding-top: 0px;
 }
 
 .modal .btn-close:hover{
@@ -38,7 +40,8 @@
       background-color: #fefefe;
       margin: auto;
       border: 1px solid #888;
-      width: 60%;
+      width: 50%;
+      border-radius: 4px;
   }
   
     .modal-content .form-title{
@@ -88,16 +91,16 @@
                 margin-top: 16px;
             }
             
-                .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-1{
-                    display: block;  
-                    width: 50%;
+                .modal-content .avatar-and-form .form-info .input-left{
+                    width: 50%; 
+                    padding-right: 16px;
+                    position: relative;
                 }
-                .modal-content .avatar-and-form .form-info .infor-employee .info-input .row-2{
-                    display: block;  
-                    width: 50%;
-                    padding-left: 16px;
+                .modal-content .avatar-and-form .form-info .input-right {
+                    width: 50%; 
+                    padding-right: 8px;
+                    position: relative;
                 }
-
 .modal .btn-save-cancel{
     margin-top: 24px;
     background-color: #bbbbbb;
